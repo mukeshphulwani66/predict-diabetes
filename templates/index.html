@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+Home page
+{% endblock %}
+
+{% block body %}
+
+<form class="myform" action="/predict" method="POST">
+  <h3>Fasting Sugar:</h3>
+  <input name="FS" type="number">  
+  <h3>Frequent urination:</h3>
+  <select name="FU">
+    <option value="" disabled selected>choose Your option</option>
+    <option value="1">YES</option>
+    <option value="0">NO</option>
+  </select>
+  <button class="btn" type="submit">Submit</button>
+  {% if data:%}
+  <h4 style="color:{{data[1]}}">
+    {{data[0]}}
+  </h4>
+  {% endif %}
+   
+</form>
+
+
+
+{% endblock %}

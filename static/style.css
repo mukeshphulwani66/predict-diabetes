@@ -1,0 +1,8 @@
+.myform{
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+select{
+    display: block !important;
+}

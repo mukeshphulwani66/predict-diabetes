@@ -1,0 +1,7 @@
+__pycache__
+include
+Lib
+Scripts
+pyvenv.cfg
+*.ipynb
+*.csv
